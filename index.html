@@ -4,17 +4,33 @@
     <title>KEMIKA-WE</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/5dfdc94a7c.js" crossorigin="anonymous"></script>
     <style>
 
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+        html,body,h1,h2,h3,h4,h5,h6{font-family: "Roboto", sans-serif}
+
+        html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+        
+        html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+
+        h1,h2,h3,h4,h5{line-height:0.8;}h6{line-height:1.5;}
+
+        h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 
         .bg{
           color:#fff;
           background-color:#191970
+        }
+
+        hr{
+          border:0;
+          border-top:1px solid #eee;
+          margin:10px 0;
+          box-sizing:content-box;
+          height:0;
+          overflow:visible
         }
 
         .white{
@@ -99,7 +115,7 @@
         .card{
           box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
 
-        .card-4{
+        .card-2{
           box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
         }
 
@@ -185,7 +201,7 @@
     <!-- Left Column -->
     <div class="third">
     
-      <div class="white text-grey card-4">
+      <div class="white text-grey card-2">
         <div class="display-container">
           <img src="https://i.imgur.com/GBg8C0T.jpg" style="width:100%" alt="Avatar">
         </div>
@@ -216,6 +232,7 @@
             <div class="container center round-xlarge deep" style="width:70%">70%</div>
           </div>
           <br>
+          <hr>
 
           <p class="large"><b><i class="fa-sharp fa-solid fa-earth-americas fa-fw margin-right text-deep"></i>Languages</b></p>
           <p>English</p>
@@ -227,6 +244,7 @@
             <div class="round-xlarge deep" style="height:24px;width:40%"></div>
           </div>
           <br>
+          <hr>
 
           <p class="large"><b><i class="fa-solid fa-user-secret fa-fw margin-right text-deep"></i>My Characteristics</b></p>
             <p><i class="fa-solid fa-feather"></i> Active Listening</p>
@@ -244,7 +262,6 @@
     
       <div class="container card white margin-bottom">
         <h2 class="text-grey padding-16"><i class="fa fa-rocket fa-fw margin-right xxlarge text-deep"></i>Experience</h2>
-        
         <div class="container">
           <h5 class="opacity"><b>TU TALARDNAT</b></h5>
           <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>Oct 2022 - <span class="tag deep round">Current</span></h6>
@@ -278,7 +295,7 @@
           <hr>
         </div>
         <div class="container">
-          <h5 class="opacity"><b>School representative for Petchyodmongkud Mathematics competition <br>(คณิตศาสตร์เพชรยอดมงกุฎ ประจำปีการศึกษา 2562)</br></h5>
+          <h5 class="opacity"><b>School representative for Petchyodmongkud Mathematics competition</br></h5>
           <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>2019</h6>
         </div>
         <br>
@@ -314,8 +331,8 @@
 
 <footer class="container">
   <p>Visit my GitHub Repository</p>
-  <a href="https://github.com/kemika-we/kemika-we.github.io"><i class="fa fa-github"></i></a>
-  <br>
+  <a href="https://github.com/kemika-we/kemika-we.github.io" class="xxlarge" style="color: white;"><i class="fa fa-github"></i></a>
+  <br><br>
 </footer>
 
 </body>

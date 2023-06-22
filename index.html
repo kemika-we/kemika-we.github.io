@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/5dfdc94a7c.js" crossorigin="anonymous"></script>
     <style>
 
@@ -21,12 +22,12 @@
 
         .bg{
           color:#fff;
-          background-color:#191970
+          background-color:#171756
         }
 
         hr{
           border:0;
-          border-top:1px solid #eee;
+          border-top:1px solid #c0c0c0;
           margin:10px 0;
           box-sizing:content-box;
           height:0;
@@ -181,15 +182,26 @@
         }
 
         footer{
-          display:block;
-          left: 0;
-          bottom: 0;
-          width: 100%;
-          background-color: #4b1b8d;
+          background-color: #000;
           color: white;
           text-align: center;
           margin-top: 20px;
         }
+
+        .video-container {
+          position: relative;
+          width: 100%;
+          padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+        }
+
+        .video-container iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
 
     </style>
   </head>
@@ -205,11 +217,11 @@
         <div class="display-container">
           <img src="https://i.imgur.com/GBg8C0T.jpg" style="width:100%" alt="Avatar">
         </div>
-
+        <br>
         <div class="container">
           <p><i class="fa fa-briefcase fa-fw margin-right large text-deep"></i>Computer Engineering</p>
           <p><i class="fa fa-home fa-fw margin-right large text-deep"></i>Bangkok, TH</p>
-          <p><i class="fa fa-envelope fa-fw margin-right large text-deep"></i>kemika.wee@dome.tu.ac.th</p>
+          <p><i class="fa fa-envelope fa-fw margin-right large text-deep"></i>kemika.we@gmail.com</p>
           <p><i class="fa fa-phone fa-fw margin-right large text-deep"></i>085-443-0123</p>
           <p><a href="https://github.com/6310682619" style="color: black;"><i class="fa fa-github fa-fw margin-right large text-deep"></i>github.com/6310682619</a></p>
           <p><a href="https://github.com/kemika-we" style="color: black;"><i class="fa fa-github fa-fw margin-right large text-deep"></i>github.com/kemika-we</a></p>
@@ -217,35 +229,25 @@
 
           <p class="large"><b><i class="fa-solid fa-meteor fa-fw margin-right text-deep"></i>Skills</b></p>
           
-          <p><i class="fa-solid fa-code"></i> HTML</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:85%">85%</div>
-          </div>
-          <p><i class="fa-brands fa-python"></i> Python</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:70%">70%</div>
-          </div>
-          <p><i class="fa-brands fa-java"></i> Java</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:60%">60%</div>
-          </div>
-          <p><i class="fa-solid fa-desktop"></i> Computer Literacy</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:70%">70%</div>
-          </div>
-          <br>
+          <p><i class="fa-brands fa fa-fw fa-python margin-right"></i>Python</p>
+          
+          <p><i class="fa-solid fa fa-fw fa-code margin-right"></i>HTML</p>
+          
+          <p><i class="fa-brands fa fa-fw fa-python margin-right"></i>CSS</p>
+          
+          <p><i class="fa-brands fa fa-fw fa-java margin-right"></i>Java</p>
+
+          <p><i class="fa-brands fa fa-fw fa-android margin-right"></i>Kotlin</p>
+          
+          <p><i class="fa-solid fa fa-fw fa-desktop margin-right"></i>Computer Literacy</p>
+          
           <hr>
 
           <p class="large"><b><i class="fa-sharp fa-solid fa-earth-americas fa-fw margin-right text-deep"></i>Languages</b></p>
           <p>English</p>
-          <div class="light-grey round-xlarge">
-            <div class="round-xlarge deep" style="height:24px;width:70%"></div>
-          </div>
-          <p>Japanese</p>
-          <div class="light-grey round-xlarge">
-            <div class="round-xlarge deep" style="height:24px;width:40%"></div>
-          </div>
-          <br>
+          <!-- <div class="light-grey round-xlarge">
+            <div class="round-xlarge center deep" style="height:24px;width:70%">70%</div>
+          </div> -->
           <hr>
 
           <p class="large"><b><i class="fa-solid fa-user-secret fa-fw margin-right text-deep"></i>My Characteristics</b></p>
@@ -258,31 +260,21 @@
       </div><br>
 
       <div class="white text-grey card-2">
-        
         <div class="container">
-          <p class="large"><b><i class="fa-solid fa-balloons fa-fw margin-right text-deep"></i>Free area</b></p>
+          <br>
+          <p class="large"><b><i class="fa-brands fa-youtube fa-fw margin-right text-deep"></i>Free area</b></p>
           
-          <p><i class="fa-solid fa-code"></i> HTML</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:85%">85%</div>
-          </div>
-          <p><i class="fa-brands fa-python"></i> Python</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:70%">70%</div>
-          </div>
-          <p><i class="fa-brands fa-java"></i> Java</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:60%">60%</div>
-          </div>
-          <p><i class="fa-solid fa-desktop"></i> Computer Literacy</p>
-          <div class="light-grey round-xlarge small">
-            <div class="container center round-xlarge deep" style="width:70%">70%</div>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/XLFEvHWD_NE?autoplay=1&mute=1"
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+            ></iframe>
           </div>
           <br>
-          <hr>
-
         </div>
-      </div><br>
+      </div>
+      <br>
     </div>
 
     <!-- Right Column -->
@@ -290,10 +282,50 @@
     
       <div class="container card white margin-bottom">
         <h2 class="text-grey padding-16"><i class="fa fa-rocket fa-fw margin-right xxlarge text-deep"></i>Experience</h2>
+        <br>
         <div class="container">
-          <h5 class="opacity"><b>TU TALARDNAT</b></h5>
+          <h5 class="opacity"><b>Internship at Airport of Thailand</b></h5>
           <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>Oct 2022 - <span class="tag deep round">Current</span></h6>
-          <p>Online marketplace with an atmosphere like real market.</p>
+          <p>Enterprise Digital Solution Department
+            <li>Developer</li>
+            <li>UX/UI Design</li>
+          </p>
+          <hr>
+        </div>
+
+        <div class="container">
+          <h5 class="opacity"><b>PhoneBook: Android Application</b></h5>
+          <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>May 2023</h6>
+          <p>A phone book application is designed to store contacts, including phone numbers, names, and contact types. This application is developed using Kotlin.</p>
+          <p><a href="https://github.com/6310682619/cn333as5" style="color: black;">github.com/6310682619/cn333as5</a></p>
+          <hr>
+        </div>
+
+        <div class="container">
+          <h5 class="opacity"><b>Multi-Game: Android Application</b></h5>
+          <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>May 2023</h6>
+          <p>An application contain three games whic is 
+            <li>Number Guessing Game</li>
+            <li>Quiz Game</li>
+            <li>Tic-Tac-Toe Game</li>
+            This application is developed using Kotlin.
+          </p>
+          <p><a href="https://github.com/6310682619/cn333as3" style="color: black;">github.com/6310682619/cn333as3</a></p>
+          <hr>
+        </div>
+        
+        <div class="container">
+          <h5 class="opacity"><b>ChatUp (Group project)</b></h5>
+          <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>Oct 2022 - Nov 2022</h6>
+          <p>A social media application is designed for users to share their lifestyle through photos or text and chat with their friend circle. We enhance the security of this application by implementing OTP verification for user accounts and encryption for every chat message.</p>
+          <p><a href="https://github.com/6310682619/ChatUp" style="color: black;">(private) github.com/6310682619/ChatUp</a></p>
+          <hr>
+        </div>
+        
+        <div class="container">
+          <h5 class="opacity"><b>TU TALARDNAT (Group project)</b></h5>
+          <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>Oct 2022 - Nov 2022</h6>
+          <p>An online marketplace with an atmosphere similar to a real market. Users have the freedom to choose to be a customer, seller, or both by registering on our website.</p>
           <p><a href="https://github.com/6310682619/cn331-Talardnat" style="color: black;">github.com/6310682619/cn331-Talardnat</a></p>
           <hr>
         </div>
@@ -315,6 +347,7 @@
 
       <div class="container card white margin-bottom">
         <h2 class="text-grey padding-16"><i class="fa fa-trophy fa-fw margin-right xxlarge text-deep"></i>Academic Achievements</h2>
+        <br>
         <div class="container">
           <h5 class="opacity"><b>Full score in Mathematics, O-NET exam of grade 12</b></h5>
           <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>2019</h6>
@@ -330,6 +363,7 @@
 
       <div class="container card white">
         <h2 class="text-grey padding-16"><i class="fa fa-certificate fa-fw margin-right xxlarge text-deep"></i>Education</h2>
+        <br>
         <div class="container">
           <h5 class="opacity"><b>Thammasat University</b></h5>
           <h6 class="text-deep"><i class="fa fa-calendar fa-fw margin-right"></i>Current</h6>
@@ -349,16 +383,14 @@
         </div>
         <br>
       </div>
-
     </div>
-    
   </div>
-  
 </div>
 
-<footer class="container">
+<footer>
+  <br>
   <p>Visit my GitHub Repository</p>
-  <a href="https://github.com/kemika-we/kemika-we.github.io" class="xxlarge" style="color: white;"><i class="fa fa-github"></i></a>
+  <a href="https://github.com/6310682619" class="xxlarge" style="color: white;"><i class="fa fa-github"></i></a>
   <br><br>
 </footer>
 
